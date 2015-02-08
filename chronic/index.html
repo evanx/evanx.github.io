@@ -469,7 +469,7 @@ c0minutely() {
       </div>
     </div>
 
-    <div class="container" ng-show="view === 'help'" ng-cloak>
+    <div class="container" ng-show="true || view === 'help'" ng-cloak>
       <div class="row well-lg">
         <h2 id="learn">Getting further</h2>
         <p>Customize the <tt>custom.chronica.sh</tt> script to check the ports and services you wish to monitor, every minute, hour or daily.</p>
@@ -592,7 +592,7 @@ su - chronica -c 'scripts/chronica.sh start'</pre>
       </div>
     </div>
 
-    <div class="container" ng-show="false && (view === 'about' || view === 'help')">
+    <div class="container" ng-show="true || (view === 'about' || view === 'help')">
       <div class="row well-lg">
         <h3><a name="faq">Frequently asked questions</a></h3>
 
