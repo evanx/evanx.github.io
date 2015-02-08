@@ -75,7 +75,7 @@
               <a ng-click="login()" href="#"><img src="images/persona-login.png"/></a>
             </div>
             <div class="navbar-text" ng-show="loggingIn">
-              <span>Verify...</span>
+              <span ng-show="false">Verify...</span>
             </div>
             <div class="navbar-text" ng-cloak ng-show="persona.email && !loggingIn">
               <a ng-click="logout()" class="navbar-link" href="#">{{persona.email}}</a>
@@ -758,7 +758,7 @@ OK: www.google.com port 443 https: CN=www.google.com,O=Google Inc,L=Mountain Vie
         </p>          
 
         <hr> 
-        <p class="pull-right">
+        <p class="pull-right" ng-if="false">
           <a href="https://www.positivessl.com" style=
              "font-family: arial; font-size: 10px; color: #212121; text-decoration: none;">
             <img src="https://www.positivessl.com/images-new/PositiveSSL_tl_white2.gif"
