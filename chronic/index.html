@@ -397,11 +397,16 @@
 
     <div class="container" ng-show="!persona.email || view === 'help'">
       <div class="row well-lg">
+        <h1 ng-show="!persona.email">
+          <b>Notice: this project is currently defunct.
+        </h1>
+         <hr>
         <h2 ng-show="!persona.email">
-          <b>Notice: this project is currently defunct.</h2>
-        <h2 ng-show="!persona.email">
-          <b>Instant</b> cloud monitoring, <i>as follows.</i></h2>
-        <h2 ng-cloak ng-show="persona.email">Getting started</h2>
+          <b>Instant</b> cloud monitoring, <i>as follows.</i>
+        </h2>
+        <h2 ng-cloak ng-show="persona.email">
+           Getting started
+        </h2>
         <p>Step 1: <b>Get</b> these two scripts.
         <pre>curl -1 -s -O https://chronica.co/sample/custom.chronica.sh
 curl -1 -s -O https://chronica.co/sample/chronica.sh</pre>   
