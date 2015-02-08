@@ -395,7 +395,7 @@
       </div>
     </div>
 
-    <div class="container" ng-show="!persona.email || view === 'help'">
+    <div class="container" ng-show="true || !persona.email || view === 'help'">
       <div class="row well-lg">
         <h1 ng-show="!persona.email">
            <b>Notice: this project is currently defunct.</b>
@@ -516,7 +516,7 @@ su - chronica -c 'scripts/chronica.sh start'</pre>
       </div>
     </div>
 
-    <div class="container" ng-show="view === 'about' || view === 'help'" ng-cloak>
+    <div class="container" ng-show="true || view === 'about' || view === 'help'" ng-cloak>
       <div class="row well-lg">
         <h2 ng-cloak ng-show="persona.email && view === 'about'"><b>Instant</b> cloud monitoring</h2>
 
