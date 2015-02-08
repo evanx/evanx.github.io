@@ -612,13 +612,13 @@ su - chronica -c 'scripts/chronica.sh start'</pre>
           <br>You can use Chronica to monitor your systems, networks and applications, internally and externally, adding custom checks as required.
         </p>
 
-        <p><b>How much does it cost?</b>
+        <p ng-show="false"><b>How much does it cost?</b>
           <br>It's free and open. Bits and bytes are priceless ;)
           <br>When our instance is nearing its capacity, the largest users will be asked to contribute an cloud instance to the project, or to manage their own installation on their own infrastructure.
           Additional resource-intensive features can be enabled for users who have contributed an instance, e.g. their events and metrics recorded into the database.
         </p>
 
-        <p><b>Who should try it?</b>
+        <p ng-show="false"><b>Who should try it?</b>
           <br>Someone who has an unmonitored Linux system, and wants an instant solution, without any server setup.
           <br>Linux admins who want a monitoring solution enabling custom checks using shell commands.
           <br>Someone who deploys a Java application they wish to monitor unobtrusively via log4j.
@@ -637,7 +637,7 @@ su - chronica -c 'scripts/chronica.sh start'</pre>
           <br>Primarily, email. Also "push" notification via HTTPS post to a URL you can register. (Naturally this URL should require client auth and trust our SSL cert, and allow our IP number to connect.) This could integrate with an SMS gateway on your account.
         </p>
         <pre>$ sh chronica.sh push https://myserver:8443/myapp</pre>
-        <p><b>What about mobile push notifications?</b>
+        <p ng-show="false"><b>What about mobile push notifications?</b>
           <br>We want to support mobile push notifications, perhaps via our own app e.g. using PhoneGap aka Apache Cordova with its PushPlugin. Also Facebook, Google+ and Twitter integration for messaging via those platforms, according to demand.
         </p>
         <p><b>What other notification mechanisms are already supported?</b>
@@ -657,7 +657,7 @@ Subject: root@hostx checksys CRITICAL</pre>
         <p><b>Why JRE's built-in HTTPS server rather than Apache Tomcat?</b>
           <br>For prototyping we wanted the quickest possible startup. Also we wanted control of the SSL context, and thread executor pool. 
 
-        <p><b>Why doesn't the site work on my phone's browser?</b>
+        <p ng-show="false"><b>Why doesn't the site work on my phone's browser?</b>
           <br>It will, soon! We use Twitter Bootstrap 3, which is "mobile first" and responsive to desktop, tablet and phone.
         </p>
 
@@ -734,18 +734,18 @@ OK: www.google.com port 443 https: CN=www.google.com,O=Google Inc,L=Mountain Vie
           So <tt>grep</tt> and <tt>sed</tt> out the salient information that you wish to monitor for changes. 
         </p>
 
-        <p><b>What about escalation?</b>
+        <p ng-show="false"><b>What about escalation?</b>
           <br>Escalation is an upcoming feature, whereby one can subscribe to an escalation level, 
           and may do so conditionally on another subscriber having acknowledged the alert. 
           (Obviously managers might want alerts if an issue is not resolved after certain period of time, 
           whereas standby engineers might want an alert only when it has not been timeously acknowledged by an on-duty engineer.) 
         </p>
 
-        <p><b>What other applications?</b>
+        <p ng-show="false"><b>What other applications?</b>
           <br>We are looking at using the platform for scheduling reminders, for ourselves ;)
         </p>
 
-        <p><b>What about mobile app monitoring?</b>
+        <p ng-show="false"><b>What about mobile app monitoring?</b>
           <br>We are looking at how to scale e.g. to handle millions of devices running a specific app which uses Chronica to report metrics on the app's performance.
           <br>Our thoughts are that metrics would be submitted using HTTPS without a client cert. These metrics are then aggregated across all devices, and presented via the site.
           This enables scalability, and also ensures privacy.
@@ -760,7 +760,7 @@ OK: www.google.com port 443 https: CN=www.google.com,O=Google Inc,L=Mountain Vie
           This uses <a href="https://github.com/evanx/vellumcore">vellumcore</a> which is a common base of distilled code from previous projects.
         </p>          
 
-        <p><b>Who is the original developer?</b>
+        <p ng-show="false"><b>Who is the original developer?</b>
           <br>evan.summers@gmail.com, <a href="https://twitter.com/evanxsummers">@evanxsummers</a>, blog <a href="https://java.net/blogs/evanx">java.net/blogs/evanx</a>
         </p>          
 
