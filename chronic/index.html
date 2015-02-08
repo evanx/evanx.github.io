@@ -45,7 +45,7 @@
         <div class="navbar-header">
           <ul class="nav navbar-nav">
             <li>
-              <a class="navbar-brand" href="#" ng-click="changeView('about')">Chronica.co</a>
+              <a class="navbar-brand" href="#" ng-click="changeView('about')">Chronica</a>
             </li>
           </ul>
         </div>
@@ -397,6 +397,8 @@
 
     <div class="container" ng-show="!persona.email || view === 'help'">
       <div class="row well-lg">
+        <h2 ng-show="!persona.email">
+          <b>Notice: this project is currently defunct.</h2>
         <h2 ng-show="!persona.email">
           <b>Instant</b> cloud monitoring, <i>as follows.</i></h2>
         <h2 ng-cloak ng-show="persona.email">Getting started</h2>
