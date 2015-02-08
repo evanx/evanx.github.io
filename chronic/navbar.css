@@ -1,0 +1,18 @@
+body {
+  font-family: Ubuntu;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  margin-left: 20px;    
+}
+
+pre.ubuntumono {
+  font-family: Ubuntu Mono;
+  font-size: 12pt;
+}

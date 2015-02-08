@@ -1,0 +1,3 @@
+User-agent: *
+Host: chronica.co
+Disallow: /chronicapp/

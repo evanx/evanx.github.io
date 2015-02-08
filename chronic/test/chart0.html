@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Chart.js Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  </head>
+
+  <body>
+
+    <div ng-app="anglesExample" ng-controller="angCtrl">
+      <div class="container" >
+        <div class="row-fluid">
+          <div class="span6" style="margin:40px 0;">	
+            <canvas linechart options="options" data="chart[0]" id="lineChart" width="600" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/angular-1.2.0.min.js"></script>
+    <script type="text/javascript" src="/js/Chart.min.js"></script>
+    <script type="text/javascript" src="angles.js"></script>
+    <script src="chart0.js"></script>
+  </body>
+</html>

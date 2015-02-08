@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="/js/angular-1.2.0.min.js"></script>
+        <script type="text/javascript" src="/js/Chart.min.js"></script>
+        <script type="text/javascript" src="angular-chartjs.js"></script>
+        <script type="text/javascript" src="chart1.js"></script>
+    </head>
+
+    <body ng-app="testapp">
+
+        <div ng-controller="testCtrl">
+            
+            <cjs-doughnut dataset="doughnutData" options="doughnutOptions" segment-stroke-color="#1C1C1C" 
+segment-stroke-width="2"></cjs-doughnut>
+
+            <cjs-line dataset="lineData"></cjs-line>
+
+            <cjs-bar dataset="barData"></cjs-bar>
+
+            <cjs-radar dataset="radarData"></cjs-radar>
+
+            <cjs-polar dataset="polarData"></cjs-polar>
+
+            <cjs-pie dataset="polarData"></cjs-pie>
+            
+        </div>
+
+    </body>
+
+</html>
