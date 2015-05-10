@@ -21,10 +21,17 @@
    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
 
    <style type="text/css">
-      .logo {
-         background-size: 0px 9px;
-         background-image: url(http://evanx.github.io/images/logo/evanx.png);
+      @media screen and (max-width: 768px) {
+         .logo {
+            background-image: url(http://evanx.github.io/images/logo/evanx_none.png);
+         }
       }
+      @media screen and (min-width: 769px) {
+         .logo {
+            background-image: url(http://evanx.github.io/images/logo/evanx.png);
+         }
+      }
+      @media screen {
       @media screen {
          .article-excerpt {
             margin: 8px 15px;
