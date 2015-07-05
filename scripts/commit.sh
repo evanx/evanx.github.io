@@ -1,2 +1,4 @@
 
-  git add -A ; git commit -m 'frontpage' ; git push
+cd ~/evanx.github.io
+
+  git add -A ; git commit -m 'update' ; git push
