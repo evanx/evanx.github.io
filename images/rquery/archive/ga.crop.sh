@@ -1,10 +1,7 @@
 
 set -u -e
 
-name=$1
-shift
-num=$1
-shift
+name=show-ga
 
 cd $name
 pwd
@@ -14,17 +11,6 @@ mkdir -p resized
 mkdir -p geom
 mkdir -p tmp
 
-if [ ! -d orig ]  
-then
-  mkdir -p orig
-  for num in `seq 1 $num`
-  do
-    echo $num
-    gnome-screenshot -d 4 -f orig/$num.png
-  done 
-  exit 1
-fi
-
 crop='800x380'
 cropOffset='+5+3'
 shave='65x50'
@@ -33,7 +19,7 @@ resize='1024x512'
 convert -size $resize xc:white tmp/canvas.png
 
 c1screenshot() {
-  gnome-screenshot -d 4 -f orig/$1.png
+  gnome-screenshot -d 4 -f show-ga/orig/$1.png
 }
 
 c2geom() {
